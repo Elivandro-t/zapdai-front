@@ -13,7 +13,7 @@ import { formModalComponent } from "../../../../shared/component/formModal/formM
     standalone: true,
     templateUrl:'./signin.component.html',
     styleUrl:'./signin.component.scss',
-    imports: [CommonModule, ReactiveFormsModule, MatSnackBarModule, FormLoginComponent, formModalComponent, PageContainerComponent]
+    imports: [CommonModule, ReactiveFormsModule, MatSnackBarModule, FormLoginComponent, formModalComponent]
 })
 
 export class SigninComponent {

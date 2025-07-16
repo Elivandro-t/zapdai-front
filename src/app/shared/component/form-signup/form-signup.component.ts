@@ -9,11 +9,10 @@ import { SnackService } from '../../../services/snackBar/snack.service';
 import { NgxMaskDirective } from 'ngx-mask';
 import { Router } from '@angular/router';
 import { loadingService } from '../../../services/loading/loading.service';
-import { formModalComponent } from '../formModal/formModal.component';
 
 @Component({
   selector: 'app-form-signup',
-  imports: [CommonModule, ReactiveFormsModule, MatSnackBarModule, formModalComponent, MatButtonModule, NgxMaskDirective],
+  imports: [CommonModule, ReactiveFormsModule, MatSnackBarModule, MatButtonModule, NgxMaskDirective],
   templateUrl: './form-signup.component.html',
   styleUrl: './form-signup.component.scss'
 })

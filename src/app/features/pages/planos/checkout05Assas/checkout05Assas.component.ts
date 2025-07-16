@@ -1,5 +1,4 @@
-import { AfterViewInit, Component, HostListener, Input, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
-import { PageContainerComponent } from "../../../../shared/component/page-container/page-container.component";
+import {  Component, HostListener, OnInit, ViewEncapsulation } from '@angular/core';
 import { MatListModule } from '@angular/material/list';
 import { AsideComponent } from '../../../../shared/component/aside-modal/aside-modal.component';
 import { MatInputModule } from '@angular/material/input';
@@ -36,7 +35,6 @@ import { AuthDecodeService } from '../../../../services/AuthUser.service';
   selector: 'app-checkoutPlanos02',
   standalone: true,
   imports: [
-    PageContainerComponent,
     MatListModule,
     AsideComponent,
     CheckoutPixAsaasComponent,

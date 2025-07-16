@@ -3,8 +3,7 @@ import { PageContainerComponent } from "../../../../shared/component/page-contai
 import { BannerComponent } from "../../../../shared/component/banner/banner.component";
 import {MatListModule} from '@angular/material/list';
 import { AsideComponent } from '../../../../shared/component/aside-modal/aside-modal.component';
-import { Router, RouterOutlet } from '@angular/router';
-import { loadingService } from '../../../../services/loading/loading.service';
+import { Router } from '@angular/router';
 import { PlanosItensComponent } from '../../../../shared/component/plano_itens/planositem.component';
 import { PlanoService } from '../../../../services/routesApiZapdai/planos.service';
 import { itensPlanos } from '../../../../shared/core/Plano/planosItens';
@@ -14,7 +13,7 @@ import { formModalComponent } from '../../../../shared/component/formModal/formM
 @Component({
   selector: 'app-homePlanos',
   standalone: true,
-  imports: [PageContainerComponent,
+  imports: [
      footerComponent, BannerComponent,
       MatListModule, AsideComponent, 
       formModalComponent,

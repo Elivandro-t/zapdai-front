@@ -1,5 +1,4 @@
 import { Routes } from '@angular/router';
-import { authGuardian } from './services/auth.guard';
 import { NotFoundComponent } from './features/pages/404/notFound.component';
 import { LoadingComponent } from './features/pages/loading/loading.component';
 import { loadingGuard } from './services/loading/loading.guard';
@@ -9,11 +8,6 @@ export const routes: Routes = [
     {
         path:"new", redirectTo:"/", pathMatch:"full"
 
-    },
-
-
-    {
-        path: "admin", loadChildren: () => import("./features/pages/admin/admin.routes").then(rota => rota.routes), data: { acess: ["ROLE_ADMIN", "ROLE_MODERATOR"] }, canActivateChild: [authGuardian],
     },
     {
         path: "auth", loadChildren: () => import("./features/pages/auth/auth.routes").then(e => e.routes)
